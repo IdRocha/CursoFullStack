@@ -3,17 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <title>Inserindo HTML</title>
+    <script src="script.js"></script>
     <script>
-        let nome = prompt('Digite o nome: ');
-        let idade = prompt('Digite a idade: ');
-        let nota1 = parseInt(prompt('Digite a nota 1: '));
-        let nota2 = parseInt(prompt('Digite a nota 2: '));
-        let media = (nota1+nota2)/2;
-        document.write('<h1> O nome digitado é '+nome+' e a idade é '+idade+ ' anos</h1>');
-        document.write('<h1>A média do aluno foi '+ media+' </h1>')
+        function eventoMouse() {
+            document.write('Evento Aconteceu')
+        }
     </script>
 </head>
 <body>
+    <div style="background-color: blue; height: 200px; width: 200px;" onclick="eventoMouse()">
+        </div>
     
 </body>
 </html>
